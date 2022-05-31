@@ -13,7 +13,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;*/
 public class Musicplayer {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         try (Scanner scanner = new Scanner(System.in)) {
-            File file = new File("Blue Day.wav");
+            File file = new File("Blue_Day.wav");
             AudioInputStream audiostream = AudioSystem.getAudioInputStream(file);
             Clip clip = AudioSystem.getClip();
             clip.open(audiostream);
